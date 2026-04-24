@@ -1,5 +1,7 @@
 import { Text, View, TouchableOpacity } from "react-native";
 import useTheme from "@/hooks/useTheme";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
 
 export default function Index() {
   const {toggleDarkMode} = useTheme();
