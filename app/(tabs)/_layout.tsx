@@ -1,5 +1,6 @@
 import { Tabs } from "expo-router";
 import {Ionicons} from "@expo/vector-icons"
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import useTheme from "@/hooks/useTheme";
 
 export default function TabsLayout() {
@@ -29,7 +30,7 @@ export default function TabsLayout() {
         options={{
           title: "Todos",
           tabBarIcon: ({color, size}) => (
-            <Ionicons name="flash-outline" size={size} color={color}/>
+            <FontAwesome5 name="tasks" size={size} color={color} />
           )
         }}
       />
